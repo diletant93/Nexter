@@ -19,6 +19,7 @@ button{
     border: none;
     font-family: inherit;
     color: inherit;
+    cursor: pointer;
 }
 input{
     color: inherit;
@@ -30,4 +31,8 @@ html {
 
 body {
     box-sizing: border-box;
+}
+img{
+    display: block;
+    width: 100%;
 }

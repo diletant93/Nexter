@@ -14,9 +14,15 @@ $color-grey-dark-2: #6D5D4B;
 $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
 
+//font-size
+$font-size-default:1.6rem;
 
 //paddings
 $side-padding: 6rem;
 
 //col width
 $col-width:14rem;
+
+//box-shadow
+$shadow-sm: 0 2rem 5rem rgba(#000,.2);
+$shadow-sm-2: 0 2rem 5rem rgba(#000,.3);
