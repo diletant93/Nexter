@@ -1,0 +1,28 @@
+.nav{
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+        gap: 0 2rem;
+        grid-template-rows:  auto;
+    }
+    &__item{
+        text-align: center;
+        display: grid;
+        grid-template-rows: subgrid;
+    }
+    &__link:visited,
+    &__link:link{
+        display: block;
+        font-size: 1.4rem;
+        padding: 1.5rem;
+        color: #fff;
+        font-family: $font-display;
+        background-color: rgba($color: #fff, $alpha: .1);
+        transition: all .3s;
+    }
+    &__link:hover,
+    &__link:active{
+        background-color: rgba($color: #fff, $alpha: .2);
+        transform: translateY(-.3rem);
+    }
+}

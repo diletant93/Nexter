@@ -1,0 +1,25 @@
+.burger{
+    width: 100%;
+    cursor: pointer;
+    &,
+    &::after,
+    &::before{
+        display:block;
+        height: .3rem;
+        background-color: $color-grey-light-1;
+        position: relative;
+        z-index: 100;
+    }
+    &::after,
+    &::before{
+        content: '';
+        width: 100%;
+        position: absolute;
+    }
+    &::after{
+        bottom: -1.5rem;
+    }
+    &::before{
+        top: -1.5rem;
+    }
+}

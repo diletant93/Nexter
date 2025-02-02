@@ -40,3 +40,10 @@
     align-items: stretch;
 }
 
+@mixin Yflex-center-start{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+}
+

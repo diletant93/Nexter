@@ -1,4 +1,11 @@
 .footer{
     background-color: $color-secondary;
     grid-column: full-start / full-end;
+    padding:8rem 15rem;
+    text-align: center;
+    &__copyright{
+        max-width: 70%;
+        margin: 0 auto;
+        color: rgba($color: #fff, $alpha: .8);
+    }
 }
