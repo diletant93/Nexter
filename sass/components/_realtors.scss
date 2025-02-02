@@ -1,0 +1,24 @@
+.realtors {
+    @include Yflex-center-center;
+    gap: 3vh;
+    padding: 3vw;
+    &__list {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        gap:  5vh 1vh;
+    }
+
+    &__img {
+        width: auto;
+        height:7rem;
+        border-radius: 50%;
+    }
+
+    &__details {
+    }
+    &__sold {
+        text-transform: uppercase;
+        color: $color-grey-light-2;
+    }
+}

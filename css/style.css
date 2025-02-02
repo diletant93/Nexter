@@ -250,6 +250,30 @@ body {
   top: -1.5rem;
 }
 
+.realtors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3vh;
+  padding: 3vw;
+}
+.realtors__list {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 5vh 1vh;
+}
+.realtors__img {
+  width: auto;
+  height: 7rem;
+  border-radius: 50%;
+}
+.realtors__sold {
+  text-transform: uppercase;
+  color: #aaa;
+}
+
 .features {
   padding: 15rem 0;
   grid-column: center-start/center-end;
