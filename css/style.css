@@ -45,9 +45,58 @@ body {
   color: #6D5D4B;
 }
 
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+.heading-1--white,
+.heading-2--white,
+.heading-3--white,
+.heading-4--white {
+  color: #f9f7f6;
+}
+.heading-1--dark,
+.heading-2--dark,
+.heading-3--dark,
+.heading-4--dark {
+  color: #54483A;
+}
+
+.heading-4 {
+  font-size: 1.9rem;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.2rem 2rem;
+  align-items: start;
+  grid-template-rows: subgrid;
+  grid-row: span 2;
+}
+.feature .heading-4 {
+  align-self: center;
+}
+.feature__icon {
+  fill: #c69963;
+  height: 4.5rem;
+  aspect-ratio: 1;
+}
+.feature__text {
+  font-size: 1.7rem;
+  grid-column: 2/-1;
+}
+
 .features {
-  background-color: #aaa;
+  padding: 15rem 0;
   grid-column: center-start/center-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 6rem;
 }
 
 .footer {
@@ -93,7 +142,7 @@ body {
 .container {
   display: grid;
   grid-template-rows: 80vh auto 40vw repeat(3, auto);
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(auto, 14rem) [col-end]) [center-end] minmax(6rem, 14rem) [full-end];
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(auto, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
 
 /*# sourceMappingURL=style.css.map */

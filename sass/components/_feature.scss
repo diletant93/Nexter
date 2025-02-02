@@ -1,0 +1,21 @@
+.feature{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: .2rem 2rem;
+    align-items: start;
+    grid-template-rows: subgrid;
+    grid-row: span 2;
+    .heading-4{
+        align-self: center;
+    }
+    &__icon{
+        fill: $color-primary;
+        height: 4.5rem;
+        aspect-ratio: 1;
+        
+    }
+    &__text{
+        font-size: 1.7rem;
+        grid-column: 2/-1;
+    }
+}

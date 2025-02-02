@@ -1,4 +1,8 @@
 .features{
-    background-color: $color-grey-light-2;
+    padding:15rem 0;
     grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    grid-template-rows: repeat(4,auto);
+    grid-gap: 6rem;
 }
