@@ -2,7 +2,7 @@
     &__list{
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
-        gap: 0 2rem;
+        gap: 1rem 2rem;
         grid-template-rows:  auto;
     }
     &__item{

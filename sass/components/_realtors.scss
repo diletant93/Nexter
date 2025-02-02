@@ -7,6 +7,7 @@
         grid-template-columns: auto 1fr;
         align-items: center;
         gap:  5vh 1vh;
+        
     }
 
     &__img {
@@ -20,5 +21,28 @@
     &__sold {
         text-transform: uppercase;
         color: $color-grey-light-2;
+    }
+    @media (max-width:$bp-medium){
+        &__list{
+            grid-template-columns: repeat(3,min-content max-content);
+        }
+        &__img{
+            margin-right: 1rem;
+        }
+        &__details{
+            font-size: 1.2rem;
+        }
+        &__details:not(:last-child){
+            margin-right: 3rem;
+            font-size: 1rem;
+        }
+
+    }
+    @media (max-width:$bp-small) {
+        &__list{
+            grid-template-columns: min-content max-content;
+            gap: 2vh;
+        }
+        gap: 1vh;
     }
 }

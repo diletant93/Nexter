@@ -8,4 +8,14 @@
         width: 60%;
         background-color: transparent;
     }
+    @media (max-width:$bp-large) {
+        grid-column: full-start/full-end;
+        grid-row: 1/2;
+        @include Xflex-center-center;
+        padding: 3rem;
+        &__button{
+            width: 5rem;
+            margin-left: auto;
+        }
+    }
 }
